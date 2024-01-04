@@ -18,11 +18,16 @@ body{
 }
 .section{
     padding: 50px 0;
+    border-bottom: 2px solid #000;
 }
 .sec-title{
     background-color: purple;
     color: #fff;
     padding: 10px 50px;
+}
+.sec-inner-item{
+    border-bottom: 5px solid purple;
+    /* padding: 2px 0; */
 }
 
 
@@ -147,6 +152,79 @@ hr{
 .header2{
     padding: 20px 100px;
     background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
 }
+
+.logo2{}
+.logo2 a{
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    font-family: 400;
+    color: #000;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 20px 0 20px 0;
+}
+
+.header2-menu{}
+.header2-menu nav{
+    display: flex;
+}
+.header2-menu nav li{
+    list-style: none;
+}
+.header2-menu nav li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 20px;
+    transition: font-family 0.7s ease-in-out;
+    position: relative;
+}
+.header2-menu nav li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    transition: width 0.7s ease-in-out;
+}
+
+.header2-menu nav li a:hover{
+    font-family: 'Roboto', sans-serif;
+}
+.header2-menu nav a:hover::after{
+    width: 100%;
+}
+
+/* Header 02 sub Menu */
+.header2-menu nav > .sub-menu-head{
+    position: relative;
+}
+.sub-menu-body{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: #000;
+}
+
+.sub-menu-body li{
+    border-bottom: 2px solid #fff;
+}
+
+.sub-menu-body li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px!important;
+}
+.sub-menu-body li a:hover{}
 
 /* Header Section End */
