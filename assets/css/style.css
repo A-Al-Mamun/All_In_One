@@ -13,7 +13,16 @@
 }
 
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
+}
+.section{
+    padding: 50px 0;
+}
+.sec-title{
+    background-color: purple;
+    color: #fff;
+    padding: 10px 50px;
 }
 
 
@@ -22,7 +31,9 @@ body{
     width: 300px;
     height: 100vh;
     background: #000;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     transform: translateX(-300px);
 }
 .open-side-menu{
@@ -32,6 +43,7 @@ body{
     font-size: 3rem;
     cursor: pointer;
 }
+
 
 .side-menu ul{
     padding-top: 50px;
@@ -65,3 +77,76 @@ body{
     visibility: visible;
 }
 /* Side Menu Section End */
+
+
+
+
+/* Header Section Start */
+
+
+/* Header 01 */
+.header1{
+    padding: 20px 100px;
+}
+.header1 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header1 ul li{
+    list-style: none;
+}
+.logo1{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 200;
+    text-transform: lowercase;
+}
+.logo1 span{
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #000;
+    color: #fff;
+    padding: 2px;
+    margin-left: 3px;
+    border-radius: 3px;
+}
+
+.header1 ul li{}
+.header1 ul li ul{}
+.header1 ul li ul li{}
+.header1 ul li ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.header1 ul li ul li a:hover{}
+
+
+.sub-btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+    background-image: linear-gradient(#ffffff20 70%, red);
+}
+
+hr{
+    margin: 20px 0;
+}
+
+/* Header 02  */
+
+.header2{
+    padding: 20px 100px;
+    background: #000;
+}
+
+/* Header Section End */
