@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .font-roboto{
@@ -17,6 +18,7 @@ body{
     position: relative;
 }
 .section{
+    height: 100vh;
     padding: 50px 0;
     border-bottom: 2px solid #000;
 }
@@ -82,6 +84,38 @@ body{
     visibility: visible;
 }
 /* Side Menu Section End */
+
+/* Top Button Section */
+
+.top-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.top-btn a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.top-btn a i{
+    font-size: 4rem;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.top-btn a i::after{
+    content: "top";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    font-size: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+.top-btn a i:hover{
+    transform: translateY(5px);
+}
+.top-btn a i:hover::after{
+    transform: translateY(-7px);
+}
 
 
 
