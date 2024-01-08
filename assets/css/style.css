@@ -13,13 +13,16 @@
     font-family: 'Sevillana', cursive;
 }
 
+abbr{
+    text-decoration: none;
+}
+
 body{
     /* overflow: hidden; */
     position: relative;
 }
 .section{
     height: 100vh;
-    padding: 50px 0;
     border-bottom: 2px solid #000;
 }
 .sec-title{
@@ -268,3 +271,85 @@ hr{
 .sub-menu-body li a:hover{}
 
 /* Header Section End */
+
+
+
+/* Footer Section Start */
+.footer{
+    margin: 20px 0;
+    padding: 50px 100px;
+    background: #000;
+}
+.footer1-top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+}
+.foo1-top-item>a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+.foo1-top-item p{
+    color:#fff;
+}
+
+
+.foo1-top-item h2{
+    color: #fff;
+}
+
+.foo1-top-item ul li{
+    list-style: none;
+}
+.foo1-top-item ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding: 7px 0;
+    transition: all 0.7s ease-in-out;
+}
+.foo1-top-item ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer1-bottom{
+    width: 100%;
+    text-align: center;
+}
+.footer1-bottom p{
+    color:#fff;
+}
+
+
+/* Footer 02 */
+.footer2{
+    background: #fff;
+}
+.footer2-top{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer2-top input{
+    font-size: 1.5rem;
+    padding: 5px 10px ;
+    box-shadow: 0 0 9px #00000060;
+}
+.footer2-top button{
+    font-size: 1.5rem;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    background: red;
+    border: none;
+}
+
+.footer2-bottom{
+    width: 100%;
+    text-align: center;
+}
+.footer2-bottom p{}
+/* Footer Section End */
