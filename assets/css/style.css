@@ -22,6 +22,7 @@ body{
     position: relative;
 }
 .section{
+    max-width: 100%;
     height: 100vh;
     border-bottom: 2px solid #000;
 }
@@ -272,6 +273,24 @@ hr{
 
 /* Header Section End */
 
+/* About Section Start */
+.abouts{
+    max-width: 100%;
+    padding: 50px 100px;
+}
+.about1{
+    display: flex;
+    justify-content: space-between;
+}
+.about1-left,
+.about1-right{
+    width: 90%;
+    height: 250px;
+    background: #ddd;
+    margin: 10px;
+}
+/* About Section End */
+
 /* Card Section Start */
 .cards{
     max-width: 100%;
@@ -331,14 +350,17 @@ hr{
 
 /* Footer Section Start */
 .footer{
+    max-width: 100%;
     margin: 20px 0;
     padding: 50px 100px;
     background: #000;
 }
 .footer1-top{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 3rem;
+    display: flex;
+    
+}
+.foo1-top-item{
+    margin: 0 10px;
 }
 .foo1-top-item>a{
     display: inline-block;
