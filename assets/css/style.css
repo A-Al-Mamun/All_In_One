@@ -273,8 +273,14 @@ hr{
 /* Header Section End */
 
 /* Card Section Start */
+.cards{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
 .card1{
-    margin: 50px auto;
+    margin: 10px;
     padding: 15px;
     width: 230px;
     box-shadow: 0 0 8px #00000030;
@@ -298,7 +304,27 @@ hr{
     justify-content: center;
     align-items: center;
 }
-.card1 h3{}
+.card1 h3{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card1 h3 button{
+    background: purple;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .card1 h3 button:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.2);
+} */
 .card1 p{}
 /* Card Section End */
 
